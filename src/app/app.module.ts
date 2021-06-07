@@ -11,13 +11,12 @@ import {environment} from '../environments/environment';
 import { FormsModule } from '@angular/forms';
 
 import { AuthService } from './service/auth.service';
-
+import { HttpClientModule } from '@angular/common/http'
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    
   ],
   imports: [
     BrowserModule,
@@ -27,7 +26,8 @@ import { AuthService } from './service/auth.service';
     AngularFireAuthModule,
     AngularFireMessagingModule,
     AngularFireStorageModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
     
   ],
   providers: [
