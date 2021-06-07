@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
     this.password = '';
   }
   ngOnInit(){
-    this
+    this.getData()
   }
   getData() {
     return this._httpClient.get("https://us-central1-angular-app-244c7.cloudfunctions.net/helloWorld").subscribe(dataFirestore => {
